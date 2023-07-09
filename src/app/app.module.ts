@@ -6,20 +6,25 @@ import { AppComponent } from './app.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { DisplayComponent } from './display/display.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AgGridComponent } from './ag-grid/ag-grid.component';
+import { AgGridModule } from 'ag-grid-angular';
+import { HttpClientModule } from '@angular/common/http';
+import { GidComponent } from './gid/gid.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ReactiveFormComponent,
     DisplayComponent,
-    AgGridComponent,
+    GidComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AgGridModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

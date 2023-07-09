@@ -1,0 +1,13 @@
+@import '~ag-grid-community/styles/ag-grid.css';
+@import '~ag-grid-community/styles/ag-theme-alpine.css';
+.ag-root-wrapper-body.ag-layout-normal.ag-focus-managed {
+    height: 100%;
+}
+
+.ag-theme-alpine .ag-row.ag-row-level-0 {
+    background-color: #dddbdb;
+  }
+  
+  .ag-theme-alpine .ag-row.ag-row-level-1 {
+    background-color: #e6e5e5b3;
+  }
